@@ -19,7 +19,7 @@ class DepartmentController {
                 res.status(200).json(departments);
             }
             catch (e) {
-                res.status(500).json({ error: 'Internal Server Error' });
+                res.status(500).json(e);
             }
         });
         this.departmentModel = new departments_1.DepartmentModel();
